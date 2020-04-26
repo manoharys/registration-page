@@ -39,19 +39,19 @@
                     <form>
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="NAME" name="name" id="firstName"
-                                value="" required>
+                                value="" required data-tooltip="abc">
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <input class="input--style-1 js-datepicker" type="email" placeholder="Email"
-                                        name="email">
+                                        name="email" id="email" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="age">
+                                        <select name="age" required>
                                             <option disabled="disabled" selected="selected">AGE</option>
                                             <option>20</option>
                                             <option>21</option>
@@ -66,20 +66,20 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE"
-                                        name="birthday">
+                                        name="birthday" required>
                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label for="myfile" class="input--style-1">RESUME</label>
-                                    <input type="file" placeholder="RESUME" name="resume">
+                                    <input type="file" placeholder="RESUME" name="resume" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
+                                        <select name="gender" required>
                                             <option disabled="disabled" selected="selected">GENDER</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -91,14 +91,14 @@
                             </div>
                             <div class="input-group">
                                 <input class="input--style-1" type="text" placeholder="12th MARKS" name="marks"
-                                    id="marks">
+                                    id="marks" required>
 
                             </div>
 
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
+                                <select name="class" required>
                                     <option disabled="disabled" selected="selected">Specialization</option>
                                     <option>CSE</option>
                                     <option>IT</option>
@@ -114,7 +114,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <input class="input--style-1" type="text" placeholder="phone No" name="res_code"
-                                        id="phoneNo">
+                                        id="phoneNo" required>
                                 </div>
                             </div>
                         </div>
