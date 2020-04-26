@@ -14,7 +14,7 @@
         var isClick = 0;
     
         $(window).on('click',function(){
-            isClick = 0;
+            //isClick = 0;
         });
     
         $(myCalendar).on('apply.daterangepicker',function(ev, picker){

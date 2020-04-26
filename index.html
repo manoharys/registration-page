@@ -23,6 +23,9 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+
+    <!-- main js -->
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -32,11 +35,17 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form method="POST">
+                    <form>
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name">
+                            <input class="input--style-1" type="text" placeholder="NAME" name="name" id="firstName" value="" required >
                         </div>
                         <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1 js-datepicker" type="email" placeholder="Email" name="email">
+                                    
+                                </div>
+                            </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday">
@@ -76,7 +85,8 @@
                             </div>
                         </div>
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                            <input class="btn btn--radius btn--green" type="submit" value="Submit" id="button">
+                          
                         </div>
                     </form>
                 </div>
@@ -93,7 +103,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-
+     
 </body>
 
 </html>
