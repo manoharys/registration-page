@@ -23,8 +23,8 @@
 
 const btn = document.querySelector('#button');
 const name = document.getElementById('firstName');
-
-
+const ph = document.getElementById('phoneNo');
+const marks = document.getElementById('marks');
 
 btn.addEventListener('click',validate);
 
@@ -39,5 +39,19 @@ function validate(e){
         alert("Should be only alphabets with min 4 and max 10 characters");
         return false;
       }
-      
+    let phone = ph.value;
+    if(!phone.isNaN){
+       if(phone.length>10 ){
+           alert("invalid phone number");
+           return false;
+       }
+    }
+
+    let mark = marks.value;
+    if(mark.length>3){
+        alert("invalid marks");
+        return false;
+        
+    }
+    
 }
