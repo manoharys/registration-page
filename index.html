@@ -121,26 +121,32 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                   
+
                                     <input class="input--style-1" type="password" id="psw" name="psw"
                                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                                        placeholder="PASSWORD"
-                                        required>
+                                        placeholder="PASSWORD" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                   
-                                    <input class="input--style-1" type="password" id="psw" name="psw"
-                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                                        placeholder="CONFIRM PASSWORD"
-                                        required>
+
+                                    <input class="input--style-1" type="password" id="psw2" name="psw"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Enter the correct password"
+                                        placeholder="CONFIRM PASSWORD" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" class="input--style-1" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> C</label><br>
+                            <input type="checkbox" class="input--style-1" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2"> Java</label><br>
+                            <input type="checkbox" class="input--style-1" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3"> python</label><br><br>
+                            <input type="submit" class="input--style-1" value="Submit">
                         </div>
                         <div class="p-t-20">
                             <input class="btn btn--radius btn--green" type="submit" value="Submit" id="button">

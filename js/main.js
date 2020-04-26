@@ -25,6 +25,8 @@ const btn = document.querySelector('#button');
 const name = document.getElementById('firstName');
 const ph = document.getElementById('phoneNo');
 const marks = document.getElementById('marks');
+const myInput = document.getElementById("psw");
+const myInput2 = document.getElementById("psw2");
 
 btn.addEventListener('click',validate);
 
@@ -39,6 +41,7 @@ function validate(e){
         alert("Should be only alphabets with min 4 and max 10 characters");
         return false;
       }
+    //phone
     let phone = ph.value;
     if(!phone.isNaN){
        if(phone.length>10 ){
@@ -46,12 +49,23 @@ function validate(e){
            return false;
        }
     }
-
+    //marks
     let mark = marks.value;
     if(mark.length>3){
         alert("invalid marks");
         return false;
         
     }
-    
+    //password
+    // Validate length
+    if(myInput.value.length <= 8) {
+      alert("input strong password");
+    } 
+    if(!(myInput.value===myInput2.value)){
+        myInput2.style.border = '1px solid red';
+        myInput2.value="";
+        alert("Enter the correct password");
+        return false
+    }
+  
 }
